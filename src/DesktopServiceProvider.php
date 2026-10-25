@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace ZXN\ZXGuard\Desktop;
+namespace ZXN\NativeWatch\Desktop;
 
 use Illuminate\Contracts\Foundation\Application;
-use ZXN\ZXGuard\Core\Config;
-use ZXN\ZXGuard\Core\Contracts\ContextProvider;
-use ZXN\ZXGuard\Core\Laravel\ZXGuardServiceProvider;
+use ZXN\NativeWatch\Core\Config;
+use ZXN\NativeWatch\Core\Contracts\ContextProvider;
+use ZXN\NativeWatch\Core\Laravel\NativeWatchServiceProvider;
 
-final class DesktopServiceProvider extends ZXGuardServiceProvider
+final class DesktopServiceProvider extends NativeWatchServiceProvider
 {
     /**
      * Get the name of the SDK, as it shows on every event.
      */
     protected function sdkName(): string
     {
-        return 'zxn/zx-desktop';
+        return 'zinxan/native-desktop';
     }
 
     /**
