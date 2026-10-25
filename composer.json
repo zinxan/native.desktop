@@ -1,28 +1,28 @@
 {
-    "name": "zxn/zx-desktop",
-    "description": "Error tracking for NativePHP desktop apps, reported to ZXGuard.",
-    "keywords": ["nativephp", "laravel", "desktop", "error-tracking", "zxguard"],
+    "name": "zinxan/native-desktop",
+    "description": "Error tracking for NativePHP desktop apps, reported to NativeWatch.",
+    "keywords": ["nativephp", "laravel", "desktop", "error-tracking", "nativewatch"],
     "type": "library",
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "zxn/zx-core": "^0.1"
+        "zinxan/native-core": "^0.1"
     },
     "suggest": {
         "nativephp/desktop": "The NativePHP desktop runtime that this SDK reports for."
     },
     "autoload": {
         "psr-4": {
-            "ZXN\\ZXGuard\\Desktop\\": "src/"
+            "ZXN\\NativeWatch\\Desktop\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ZXN\\ZXGuard\\Desktop\\DesktopServiceProvider"
+                "ZXN\\NativeWatch\\Desktop\\DesktopServiceProvider"
             ],
             "aliases": {
-                "ZXGuard": "ZXN\\ZXGuard\\Core\\Laravel\\ZXGuard"
+                "NativeWatch": "ZXN\\NativeWatch\\Core\\Laravel\\NativeWatch"
             }
         }
     },
