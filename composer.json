@@ -1,12 +1,18 @@
 {
     "name": "zinxan/native-desktop",
     "description": "Error tracking for NativePHP desktop apps, reported to NativeWatch.",
-    "keywords": ["nativephp", "laravel", "desktop", "error-tracking", "nativewatch"],
+    "keywords": [
+        "nativephp",
+        "laravel",
+        "desktop",
+        "error-tracking",
+        "nativewatch"
+    ],
     "type": "library",
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "zinxan/native-core": "^0.1"
+        "zinxan/native-core": "^0.2"
     },
     "suggest": {
         "nativephp/desktop": "The NativePHP desktop runtime that this SDK reports for."
@@ -26,5 +32,11 @@
             }
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "homepage": "https://native.watch",
+    "support": {
+        "docs": "https://native.watch/docs",
+        "issues": "https://github.com/zinxan/native.desktop/issues",
+        "source": "https://github.com/zinxan/native.desktop"
+    }
 }
