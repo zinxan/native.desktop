@@ -56,7 +56,7 @@ it('sends a test error from the command line', function (): void {
     $this->app->register(DesktopServiceProvider::class);
 
     $this->artisan('nativewatch:test')
-        ->expectsOutputToContain('The test error was sent')
+        ->expectsOutputToContain('The server accepted the test event')
         ->assertSuccessful();
 
     Http::assertSentCount(1);
@@ -67,7 +67,7 @@ it('explains how to enable the sdk when the key is missing', function (): void {
     $this->app->register(DesktopServiceProvider::class);
 
     $this->artisan('nativewatch:test')
-        ->expectsOutputToContain('Set NATIVEWATCH_KEY')
+        ->expectsOutputToContain('Check NATIVEWATCH_ENABLED, NATIVEWATCH_KEY and NATIVEWATCH_URL')
         ->assertFailed();
 });
 
