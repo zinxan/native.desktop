@@ -47,3 +47,14 @@ Publish the config to change sampling, scrubbing or breadcrumbs:
 ```bash
 php artisan vendor:publish --tag=nativewatch-config
 ```
+
+## Commands
+
+| Command | What it does |
+| --- | --- |
+| `php artisan nativewatch:test` | Sends a test error and tells you whether NativeWatch accepted it. |
+| `php artisan nativewatch:flush` | Sends the events waiting in the offline outbox now. |
+| `php artisan nativewatch:release 1.4.0 --repository=owner/app --previous=SHA` | Run in CI: publishes the changed lines of a release so issues can show likely commits. It needs `NATIVEWATCH_RELEASE_TOKEN`, a CI-only secret. Never put it in the app. Add `--id-only` to print the build ID without a token. |
+
+Read [release and commit tracking](https://native.watch/docs/releases-and-commits)
+before you set up `nativewatch:release`.
